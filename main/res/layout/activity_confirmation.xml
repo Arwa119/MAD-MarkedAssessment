@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Success Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✅"
+            android:textSize="64sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Successful!"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your event registration has been submitted successfully."
+            android:textSize="14sp"
+            android:textColor="#555"
+            android:gravity="center"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- ===== Details Card ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Details"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1A237E"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Profile Image -->
+            <ImageView
+                android:id="@+id/ivConfirmImage"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="#E8EAF6"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:contentDescription="Profile Image"/>
+
+            <!-- Full Name -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="FULL NAME" android:textSize="11sp" android:textColor="#888"
+                android:textAllCaps="true" android:letterSpacing="0.1"/>
+            <TextView android:id="@+id/tvConfirmName"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="16sp" android:textColor="#1A1A2E" android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#F0F0F0" android:layout_marginBottom="14dp"/>
+
+            <!-- Phone -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="PHONE NUMBER" android:textSize="11sp" android:textColor="#888"
+                android:textAllCaps="true" android:letterSpacing="0.1"/>
+            <TextView android:id="@+id/tvConfirmPhone"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="16sp" android:textColor="#1A1A2E" android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#F0F0F0" android:layout_marginBottom="14dp"/>
+
+            <!-- Email -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="EMAIL ADDRESS" android:textSize="11sp" android:textColor="#888"
+                android:textAllCaps="true" android:letterSpacing="0.1"/>
+            <TextView android:id="@+id/tvConfirmEmail"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="16sp" android:textColor="#1A1A2E" android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#F0F0F0" android:layout_marginBottom="14dp"/>
+
+            <!-- Event Type -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="EVENT TYPE" android:textSize="11sp" android:textColor="#888"
+                android:textAllCaps="true" android:letterSpacing="0.1"/>
+            <TextView android:id="@+id/tvConfirmEventType"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="16sp" android:textColor="#1A1A2E" android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#F0F0F0" android:layout_marginBottom="14dp"/>
+
+            <!-- Event Date -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="EVENT DATE" android:textSize="11sp" android:textColor="#888"
+                android:textAllCaps="true" android:letterSpacing="0.1"/>
+            <TextView android:id="@+id/tvConfirmDate"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="16sp" android:textColor="#1A1A2E" android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="#F0F0F0" android:layout_marginBottom="14dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="GENDER" android:textSize="11sp" android:textColor="#888"
+                android:textAllCaps="true" android:letterSpacing="0.1"/>
+            <TextView android:id="@+id/tvConfirmGender"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="16sp" android:textColor="#1A1A2E" android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+        </LinearLayout>
+
+        <!-- Back to Home Button -->
+        <Button
+            android:id="@+id/btnBackToHome"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Back to Home"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#1A237E"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnRegisterAnother"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Register Another Event"
+            android:textSize="14sp"
+            android:backgroundTint="#E8EAF6"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
